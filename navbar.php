@@ -1,40 +1,51 @@
-<header>
-<?php include('header.php'); ?> 
+<?php include ('header.php') ?>
 
-<div class="top-header" id="navbar_top">
-       <div class="container-fluid">
-           <div class="row align-items-center">
-               <div class="col-md-12 d-flex justify-content-between align-items-center"> 
-                   <div class="left-head d-flex justify-content-start align-items-center">
-                       <a class="navbrnd" href="index.php"><img src="images/logo.png"></a>
-                      
-                      
-                   </div>                   
-                   <div class="right-head d-flex justify-content-end align-items-center">
-                   <div class="dropdown subjt">
-                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Subject
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                       </div>
-                       <div class="nav-mnsec">
-                           <a href="">FIND TUTORING JOBS
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
+    <div class="container">
+     
+    <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Your logo" title="Your logo">
+    </a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  SUBJECTS
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Physics</a>
+    <a class="dropdown-item" href="#">Chemistry</a>
+    <a class="dropdown-item" href="#">Mathmatics</a>
+  </div>
+</div>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">FIND TUTORING JOBS
 </a>
-                           <a href="">FIND A TUTOR</a>
-                          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+FIND A TUTOR</a>
+          </li>
+          <div class="notif-sec">
+                           <a href="#"><img src="assets/images/bell.png"><span>02</span></a>
                        </div>
-                       <div class="notif-sec">
-                           <a href="#"><img src="images/bell.png"><span></span></a>
-                       </div>
-                       
-                      
-                   </div>
-               </div>              
-           </div>
-       </div> 
+                     
+        </ul>
+        <div class="form-inline position-relative my-2 my-lg-0">
+      	<button type="submit" class="btn btn-secondary btn-theme2">Sign in</button>
+</div>
+<div class="form-inline position-relative my-2 my-lg-0">
+<button type="submit" class="btn btn-secondary btn-theme2">Register</button>
+</div>
+      </div>
     </div>
-</header>  
+  </nav>
+</section>
+<?php include ('script.php') ?>
